@@ -14,7 +14,7 @@ model User {
   uuid       String        @default(uuid())
   first_name String         @db.VarChar(35)
   last_name  String        @default("Не указано") @db.VarChar(35)
-  profileImg String         @default("prof.jpeg")
+  profileImg String         
   age        Int?
   role       Role          @default(USER)
   created_at DateTime      @default(now())
